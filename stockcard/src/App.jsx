@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 
-const API_BASE = `http://${window.location.hostname}:3000`;
+const API_BASE = "https://stockcard-api.onrender.com";
 
 function formatDateTime(value) {
   return value ? new Date(value).toLocaleString("th-TH") : "-";
