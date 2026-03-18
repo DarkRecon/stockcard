@@ -4,7 +4,7 @@ const sqlite3 = require("sqlite3").verbose();
 
 const app = express();
 const db = new sqlite3.Database("./stockcard.db");
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 const ADMIN_PASSWORD = "89752123";
 const ADMIN_TOKEN = "stockcard-admin-token-2026";
